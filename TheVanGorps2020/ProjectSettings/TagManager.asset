@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CamPoint1
+  - CamPoint2
+  - CamPoint3
+  - CamPoint4
   layers:
   - Default
   - TransparentFX
