@@ -20,7 +20,25 @@ public class InteractableBoundary : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         name = other.name;
-        Debug.Log("Entered " + name);
+        GameObject buttonLabel;
+        switch (name)
+        {
+            case "boundPlay":
+                buttonLabel = GameObject.Find("playButtonLabel");
+                buttonLabel.GetComponent<Renderer>().enabled = true;
+                break;
+
+            case "boundSetting":
+                buttonLabel = GameObject.Find("settingsButtonLabel");
+                buttonLabel.GetComponent<Renderer>().enabled = true;
+                break;
+
+            case "boundExit":
+                buttonLabel = GameObject.Find("exitButtonLabel");
+                buttonLabel.GetComponent<Renderer>().enabled = true;
+                break;
+        }
+        
     }
     private void OnTriggerStay(Collider other)
     {
@@ -31,6 +49,7 @@ public class InteractableBoundary : MonoBehaviour
             {
                 case "boundPlay":
                     Debug.Log("Hit button in play");
+
                     break;
 
                 case "boundSetting":
@@ -46,6 +65,23 @@ public class InteractableBoundary : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Left " + name);
+        GameObject buttonLabel;
+        switch (name)
+        {
+            case "boundPlay":
+                buttonLabel = GameObject.Find("playButtonLabel");
+                buttonLabel.GetComponent<Renderer>().enabled = false;
+                break;
+
+            case "boundSetting":
+                buttonLabel = GameObject.Find("settingsButtonLabel");
+                buttonLabel.GetComponent<Renderer>().enabled = false;
+                break;
+
+            case "boundExit":
+                buttonLabel = GameObject.Find("exitButtonLabel");
+                buttonLabel.GetComponent<Renderer>().enabled = false;
+                break;
+        }
     }
 }
