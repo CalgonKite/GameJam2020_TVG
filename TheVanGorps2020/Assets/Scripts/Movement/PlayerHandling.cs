@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerHandling : MonoBehaviour
 {
+    //PROGRAMMED BT
+    // LEE FEARNETT
+    // JACK PROCTER
 
     public GameObject Player;
     CharacterController charControls;

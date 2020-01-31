@@ -308,6 +308,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 963194225}
+  Focalpoint: {fileID: 1294274674}
+  movement: 0
+--- !u!1 &1294274674 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1985187732, guid: d691bc4506abcd14fb9482c1bded90c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 8751074708898678655}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2307919718464032019
 PrefabInstance:
   m_ObjectHideFlags: 0
