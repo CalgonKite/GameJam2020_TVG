@@ -8,6 +8,7 @@ TagManager:
   - CamPoint2
   - CamPoint3
   - CamPoint4
+  - FocalPoint
   layers:
   - Default
   - TransparentFX

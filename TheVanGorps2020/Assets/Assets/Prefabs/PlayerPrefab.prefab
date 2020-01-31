@@ -106,6 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 2307919718754503120}
+  Camera: {fileID: 0}
   speed: 3
 --- !u!143 &2307919718754503130
 CharacterController:
