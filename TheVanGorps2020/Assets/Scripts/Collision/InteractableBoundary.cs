@@ -25,6 +25,9 @@ public class InteractableBoundary : MonoBehaviour
         {
             case "boundPlay":
                 buttonLabel = GameObject.Find("playButtonLabel");
+                //Color fadeIn = buttonLabel.GetComponent<Renderer>().material.color;
+                //fadeIn.a = 0;
+                buttonLabel.GetComponent<Renderer>().material.color = new Color(1f,1f,1f,0f);
                 buttonLabel.GetComponent<Renderer>().enabled = true;
                 break;
 
