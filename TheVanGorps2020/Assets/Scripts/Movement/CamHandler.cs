@@ -21,7 +21,7 @@ public class CamHandler : MonoBehaviour
     GameObject campoint2;
     GameObject campoint3;
 
-    public GameObject Focalpoint;
+    GameObject Focalpoint;
 
     public bool movement = false;
 
@@ -43,6 +43,7 @@ public class CamHandler : MonoBehaviour
         campoint1 = GameObject.FindGameObjectWithTag("CamPoint2");
         campoint2 = GameObject.FindGameObjectWithTag("CamPoint3");
         campoint3 = GameObject.FindGameObjectWithTag("CamPoint4");
+        Focalpoint = GameObject.FindGameObjectWithTag("FocalPoint");
     }
 
     private void LateUpdate()
