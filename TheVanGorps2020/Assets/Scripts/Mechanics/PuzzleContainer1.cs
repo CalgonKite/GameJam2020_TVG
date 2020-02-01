@@ -5,6 +5,7 @@ using UnityEngine;
 public class PuzzleContainer1 : MonoBehaviour
 {
     //Programed by Lee Fearnett
+
     public bool puzzle1Solved = false;
     public GameObject Container;
 
