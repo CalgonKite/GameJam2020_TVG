@@ -9,6 +9,12 @@ TagManager:
   - CamPoint3
   - CamPoint4
   - FocalPoint
+  - PuzzleBlock1
+  - PuzzleBlock2
+  - PuzzleBlock3
+  - PuzzleBlockContainer1
+  - PuzzleBlockContainer2
+  - PuzzleBlockContainer3
   layers:
   - Default
   - TransparentFX
