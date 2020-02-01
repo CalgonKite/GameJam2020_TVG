@@ -27,7 +27,7 @@ public class ScoreCounter : MonoBehaviour
         {
             GlobalTimer += 1 * Time.deltaTime;
             rounded_timer = (int)(GlobalTimer + 0.5f);
-            Debug.Log(rounded_timer);
+            //Debug.Log(rounded_timer);
             timerText.text = rounded_timer.ToString();
         }
         else
