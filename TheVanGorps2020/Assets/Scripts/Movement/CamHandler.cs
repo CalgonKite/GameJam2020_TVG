@@ -12,9 +12,6 @@ public class CamHandler : MonoBehaviour
     public GameObject Cam;
     int currentCampoint;
 
-    //List of campositions
-    List<GameObject> Campositions = new List<GameObject>();
-
     //gameobject campoints
     GameObject campoint0;
     GameObject campoint1;
@@ -29,21 +26,12 @@ public class CamHandler : MonoBehaviour
     void Start()
     {
         currentCampoint = 0;
-        //add all campositions to the list
-        Campositions.Add(campoint0);
-        Campositions.Add(campoint1);
-        Campositions.Add(campoint2);
-        Campositions.Add(campoint3);
     }
 
     private void Awake()
     {
         //assign the object references
-        campoint0 = GameObject.FindGameObjectWithTag("CamPoint1");
-        campoint1 = GameObject.FindGameObjectWithTag("CamPoint2");
-        campoint2 = GameObject.FindGameObjectWithTag("CamPoint3");
-        campoint3 = GameObject.FindGameObjectWithTag("CamPoint4");
-        Focalpoint = GameObject.FindGameObjectWithTag("FocalPoint");
+        findcamPos();
     }
 
     private void LateUpdate()
@@ -72,7 +60,7 @@ public class CamHandler : MonoBehaviour
         //while camera is not equal to margin of error keep moving to next point
         while (Cam.transform.position.x <= campoint.transform.position.x - 0.1 || Cam.transform.position.x >= campoint.transform.position.x + 0.1)
         {
-            Cam.transform.position = Vector3.Lerp(Cam.transform.position, campoint.transform.position, Time.deltaTime);
+            Cam.transform.position = Vector3.Lerp(Cam.transform.position, campoint.transform.position, Time.deltaTime * 2);
             Cam.transform.LookAt(Focalpoint.transform.position);
             yield return null;
         }
@@ -106,7 +94,7 @@ public class CamHandler : MonoBehaviour
         //while camera is not equal to margin of error keep moving to next point
         while (Cam.transform.position.x <= campoint.transform.position.x - 0.1 || Cam.transform.position.x >= campoint.transform.position.x + 0.1)
         {
-            Cam.transform.position = Vector3.Lerp(Cam.transform.position, campoint.transform.position, Time.deltaTime);
+            Cam.transform.position = Vector3.Lerp(Cam.transform.position, campoint.transform.position, Time.deltaTime * 2);
             Cam.transform.LookAt(Focalpoint.transform.position);
             yield return null;
         }
@@ -174,5 +162,14 @@ public class CamHandler : MonoBehaviour
                 StartCoroutine(movecameraPrev(campoint2));
                 break;
         }
+    }
+
+    void findcamPos()
+    {
+        campoint0 = GameObject.FindGameObjectWithTag("CamPoint1");
+        campoint1 = GameObject.FindGameObjectWithTag("CamPoint2");
+        campoint2 = GameObject.FindGameObjectWithTag("CamPoint3");
+        campoint3 = GameObject.FindGameObjectWithTag("CamPoint4");
+        Focalpoint = GameObject.FindGameObjectWithTag("FocalPoint");
     }
 }
