@@ -77,6 +77,7 @@ public class CogHolder1 : MonoBehaviour
             invent.AddItem(cogHoldInvent.CurrentItem[0].iD); // Give the player the cog //
             cogHoldInvent.CurrentItem.Remove(cogHoldInvent.CurrentItem[0]);//
             Debug.Log("CogTaken");
+            correctcog = false;
         }
     }
 
