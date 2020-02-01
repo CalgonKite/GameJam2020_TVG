@@ -306,6 +306,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -270, z: 0}
+--- !u!1 &191096584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7980656137503357379, guid: 8a3984d891a3503478fa33a4f8f2a207,
+    type: 3}
+  m_PrefabInstance: {fileID: 2307919718464032019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &191096594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191096584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c70856a27701e541a8f0d80dad366c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 963194225}
+  DefaultCamera: {fileID: 1120888075}
+  SettingsCamera: {fileID: 307237988}
+  LevelsCamera: {fileID: 422247095}
+  FocalPoint: {fileID: 1477467396}
+  boundPlay: {fileID: 385289623}
+  boundSettings: {fileID: 1574310033}
+  boundExit: {fileID: 1547974232}
+  boundAudioLevel: {fileID: 1472715310}
+  boundTimer: {fileID: 1908290814}
+  boundSettingsReturn: {fileID: 356019717}
+  boundLevelsReturn: {fileID: 1913182383}
+  boundLevel1: {fileID: 1255984366}
+  boundLevel2: {fileID: 2120566991}
 --- !u!1 &235876333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1140,40 +1172,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &732265254 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2307919718754503120, guid: 8a3984d891a3503478fa33a4f8f2a207,
-    type: 3}
-  m_PrefabInstance: {fileID: 2307919718464032019}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &732265261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732265254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c70856a27701e541a8f0d80dad366c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Camera: {fileID: 963194225}
-  DefaultCamera: {fileID: 1120888075}
-  SettingsCamera: {fileID: 307237988}
-  LevelsCamera: {fileID: 422247095}
-  FocalPoint: {fileID: 1477467396}
-  boundPlay: {fileID: 385289623}
-  boundSettings: {fileID: 1574310033}
-  boundExit: {fileID: 1547974232}
-  boundAudioLevel: {fileID: 1418711022}
-  boundTimer: {fileID: 1908290814}
-  boundSettingsReturn: {fileID: 356019717}
-  boundLevelsReturn: {fileID: 1913182383}
-  boundLevel1: {fileID: 1255984366}
-  boundLevel2: {fileID: 2120566991}
 --- !u!1 &873971928
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,7 +1439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 22.154001, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
@@ -3318,6 +3318,21 @@ PrefabInstance:
         type: 3}
       propertyPath: speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7980656137503357390, guid: 8a3984d891a3503478fa33a4f8f2a207,
+        type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 963194225}
+    - target: {fileID: 5676678172304632974, guid: 8a3984d891a3503478fa33a4f8f2a207,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676678173478290520, guid: 8a3984d891a3503478fa33a4f8f2a207,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a3984d891a3503478fa33a4f8f2a207, type: 3}

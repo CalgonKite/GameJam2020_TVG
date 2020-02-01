@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractableBoundary : MonoBehaviour
 {
@@ -253,6 +254,7 @@ public class InteractableBoundary : MonoBehaviour
                     break;
 
                 case "boundLevel1":
+                    SceneManager.LoadScene(1);
                     Debug.Log("Start Level 1");
                     break;
 

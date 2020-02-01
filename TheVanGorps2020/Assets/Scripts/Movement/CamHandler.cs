@@ -10,6 +10,7 @@ public class CamHandler : MonoBehaviour
 
     //Camera
     public GameObject Cam;
+    public GameObject camChild;
     int currentCampoint;
 
     //gameobject campoints
@@ -62,6 +63,7 @@ public class CamHandler : MonoBehaviour
         {
             Cam.transform.position = Vector3.Lerp(Cam.transform.position, campoint.transform.position, Time.deltaTime * 2);
             Cam.transform.LookAt(Focalpoint.transform.position);
+            camChild.transform.localEulerAngles = new Vector3(-22.154f, 0f, 0f);
             yield return null;
         }
 
