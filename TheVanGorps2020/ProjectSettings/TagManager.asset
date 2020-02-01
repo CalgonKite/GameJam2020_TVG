@@ -22,12 +22,12 @@ TagManager:
   - Spawn2
   - Spawn3
   - NextFloor1
-  - NextFloor2
-  - NextScene
   - Floor1
-  - Floor2
-  - Floor3
   - Play&Cam
+  - CogHolder1
+  - CogHolder2
+  - CogHolder3
+  - CamChild
   layers:
   - Default
   - TransparentFX

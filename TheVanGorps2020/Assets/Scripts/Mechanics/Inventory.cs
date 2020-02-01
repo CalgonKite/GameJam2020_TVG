@@ -8,7 +8,7 @@ public class Inventory : MonoBehaviour
     // Programmed by JP //
     [HideInInspector]
     public List<Item> Items = new List<Item>();
-    [HideInInspector]
+
     public List<Item> CurrentItem = new List<Item>();
     public GameObject Cog1, Cog2, Cog3;
 
