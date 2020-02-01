@@ -74,10 +74,12 @@
     <Compile Include="Assets\Scripts\Mechanics\CogHolder3.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Inventory.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Item.cs" />
-    <Compile Include="Assets\Scripts\Mechanics\Level1BoundaryDestroy.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer2.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer3.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\Tutorial2Boundary1.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\Tutorial2Boundary2.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\TutorialBoundary1.cs" />
     <Compile Include="Assets\Scripts\Movement\CamHandler.cs" />
     <Compile Include="Assets\Scripts\Movement\PlayerHandling.cs" />
     <Reference Include="Unity.Timeline.Editor">
