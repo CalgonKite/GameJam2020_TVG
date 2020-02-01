@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\NextFloor1.cs" />
     <Compile Include="Assets\Scripts\Collision\InteractableBoundary.cs" />
     <Compile Include="Assets\Scripts\Collision\TestPlayerLocation.cs" />
     <Compile Include="Assets\Scripts\Globals\LoadingManager.cs" />
