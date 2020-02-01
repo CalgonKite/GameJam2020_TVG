@@ -18,6 +18,7 @@ public class PlayerHandling : MonoBehaviour
     private void Start()
     {
         charControls = Player.GetComponent<CharacterController>();
+        Player.transform.position = GameObject.FindGameObjectWithTag("Spawn1").transform.position;
     }
 
     void Update()

@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     {
         ConstructInventory();
 
-        AddItem(0);
+        //AddItem(0);
     }
 
     public void AddItem(int ID)
@@ -38,8 +38,8 @@ public class Inventory : MonoBehaviour
     {
         Items = new List<Item>(){
             new Item("Cog", 0, Cog1),
-            new Item("Smol Cog", 1, Cog1),
-            new Item("Chonk Cog", 2, Cog1),
+            new Item("Smol Cog", 1, Cog2),
+            new Item("Chonk Cog", 2, Cog3),
         };
     }
 

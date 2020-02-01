@@ -15,6 +15,19 @@ TagManager:
   - PuzzleBlockContainer1
   - PuzzleBlockContainer2
   - PuzzleBlockContainer3
+  - Boundary1
+  - Boundary2
+  - Boundary3
+  - Spawn1
+  - Spawn2
+  - Spawn3
+  - NextFloor1
+  - NextFloor2
+  - NextScene
+  - Floor1
+  - Floor2
+  - Floor3
+  - Play&Cam
   layers:
   - Default
   - TransparentFX

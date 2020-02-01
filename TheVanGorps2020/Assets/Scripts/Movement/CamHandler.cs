@@ -31,11 +31,7 @@ public class CamHandler : MonoBehaviour
     private void Awake()
     {
         //assign the object references
-        campoint0 = GameObject.FindGameObjectWithTag("CamPoint1");
-        campoint1 = GameObject.FindGameObjectWithTag("CamPoint2");
-        campoint2 = GameObject.FindGameObjectWithTag("CamPoint3");
-        campoint3 = GameObject.FindGameObjectWithTag("CamPoint4");
-        Focalpoint = GameObject.FindGameObjectWithTag("FocalPoint");
+        findcamPos();
     }
 
     private void LateUpdate()
@@ -166,5 +162,14 @@ public class CamHandler : MonoBehaviour
                 StartCoroutine(movecameraPrev(campoint2));
                 break;
         }
+    }
+
+    void findcamPos()
+    {
+        campoint0 = GameObject.FindGameObjectWithTag("CamPoint1");
+        campoint1 = GameObject.FindGameObjectWithTag("CamPoint2");
+        campoint2 = GameObject.FindGameObjectWithTag("CamPoint3");
+        campoint3 = GameObject.FindGameObjectWithTag("CamPoint4");
+        Focalpoint = GameObject.FindGameObjectWithTag("FocalPoint");
     }
 }

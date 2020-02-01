@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\NextFloor1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Cog1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Cog2.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Cog3.cs" />
