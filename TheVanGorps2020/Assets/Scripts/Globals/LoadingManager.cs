@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadingManager : MonoBehaviour
 {
 
+    //PROGRAMMED BY LEE FEARNETT
+
     AsyncOperation operation;
     int Index;
 
@@ -28,6 +30,7 @@ public class LoadingManager : MonoBehaviour
 
             case "Level1": Index = 4; break;
             case "Level2": Index = 5; break;
+            case "Level3": Index = 6; break;
         }
 
         operation = SceneManager.LoadSceneAsync(Index);
