@@ -28,13 +28,11 @@ public class NextFloor1 : MonoBehaviour
 
     void NextFloor()
     {
-        //stops multiple collision
-        //player.GetComponent<BoxCollider>().enabled = false;
         floor2.SetActive(true);
         GameObject manager = GameObject.FindGameObjectWithTag("Play&Cam");
         GameObject spawn2 = GameObject.FindGameObjectWithTag("Spawn2");
         manager.transform.position = new Vector3(manager.transform.position.x, spawn2.transform.position.y, manager.transform.position.z);
         player.transform.position = spawn2.transform.position;
-        //player.GetComponent<BoxCollider>().enabled = true;
+
     }
 }
