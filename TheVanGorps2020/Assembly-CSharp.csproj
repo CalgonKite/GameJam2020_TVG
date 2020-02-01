@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Level1BoundaryDestroy.cs" />
     <Compile Include="Assets\NextFloor1.cs" />
     <Compile Include="Assets\Scripts\Collision\InteractableBoundary.cs" />
     <Compile Include="Assets\Scripts\Globals\ScoreCounter.cs" />
@@ -71,6 +70,7 @@
     <Compile Include="Assets\Scripts\Mechanics\Cog3.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Inventory.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Item.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\Level1BoundaryDestroy.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer2.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer3.cs" />
