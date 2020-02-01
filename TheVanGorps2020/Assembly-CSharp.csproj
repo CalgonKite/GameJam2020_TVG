@@ -63,6 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NextFloor1.cs" />
+    <Compile Include="Assets\Scripts\Collision\InteractableBoundary.cs" />
     <Compile Include="Assets\Scripts\Globals\ScoreCounter.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Cog1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Cog2.cs" />
