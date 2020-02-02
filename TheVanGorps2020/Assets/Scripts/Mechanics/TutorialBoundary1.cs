@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level1BoundaryDestroy : MonoBehaviour
+public class TutorialBoundary1 : MonoBehaviour
 {
+    //PROGRAMMED BY LEE FEARNETT
+
     public GameObject PuzzleObjNeeded;
     private void LateUpdate()
     {

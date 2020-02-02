@@ -149,9 +149,10 @@ public class InteractableBoundary : MonoBehaviour
     /// <returns></returns>
     private IEnumerator OnTriggerStay(Collider other)
     {
-        bool keyPressed = Input.GetKeyDown(KeyCode.Space);
+        bool keyPressed = Input.GetKeyDown(KeyCode.L);
         if(keyPressed)
         {
+            Debug.Log("test");
             switch(name)
             {
                 case "boundPlay":

@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class CogHolder2 : MonoBehaviour
 {
+
+    //PROGRAMMED BY
+    //LEE FEARNETT
+    //JACK PROCTER
+
     public Inventory invent;
     public Inventory cogHoldInvent;
     public bool cogplace = false;
