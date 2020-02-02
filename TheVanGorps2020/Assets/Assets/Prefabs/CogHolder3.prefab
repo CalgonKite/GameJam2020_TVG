@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8696489508785932367}
   - component: {fileID: 8696489508785932366}
   - component: {fileID: 8696489508785932365}
+  - component: {fileID: -6238980160639587506}
   m_Layer: 0
   m_Name: CogHolder3
   m_TagString: CogHolder3
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8696489508785932364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.01, y: 2.49, z: 6.134}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e32b16b614cabf4bbef36dbca8c3a35, type: 2}
+  - {fileID: 2100000, guid: 1ec04299467484141b265b014f14f274, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -137,7 +138,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invent: {fileID: 0}
   cogHoldInvent: {fileID: 0}
+  selfRenderer: {fileID: 8696489508785932353}
+  emptyMaterial: {fileID: 2100000, guid: 1ec04299467484141b265b014f14f274, type: 2}
+  fullMaterial: {fileID: 2100000, guid: 313883f9a89a38e40b1841e99e3502a2, type: 2}
   cogplace: 0
   cogtake: 0
   correctcog3: 0
   cogNum: 2
+--- !u!114 &-6238980160639587506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696489508785932364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de45ea4c595653f4ea534918dc45b84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items: []
+  CurrentItem: []
+  Cog1: {fileID: 951230654571605416, guid: ec0c4e52acfb4a84eb2fadbe1b805107, type: 3}
+  Cog2: {fileID: 7658642853973854440, guid: 69b4045309793894db9d45c1d5b3bbd5, type: 3}
+  Cog3: {fileID: 6429089166050820398, guid: e4bdf2191aa9b1c4fa38a8ddaf9ae11e, type: 3}
+  c1Icon: {fileID: 0}
+  c2Icon: {fileID: 0}
+  c3Icon: {fileID: 0}

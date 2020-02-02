@@ -11,6 +11,7 @@ public class Inventory : MonoBehaviour
 
     public List<Item> CurrentItem = new List<Item>();
     public GameObject Cog1, Cog2, Cog3;
+    public Sprite c1Icon, c2Icon, c3Icon;
 
     private void Start()
     {
@@ -37,9 +38,9 @@ public class Inventory : MonoBehaviour
     void ConstructInventory()
     {
         Items = new List<Item>(){
-            new Item("Cog", 0, Cog1),
-            new Item("Smol Cog", 1, Cog2),
-            new Item("Chonk Cog", 2, Cog3),
+            new Item("Cog", 0, Cog1, c1Icon),
+            new Item("Smol Cog", 1, Cog2, c2Icon),
+            new Item("Chonk Cog", 2, Cog3, c3Icon),
         };
     }
 
