@@ -9,6 +9,10 @@ Dewhurst - UI / General Programming / Audio
 
 Welham - UI / General Programming / Audio
 
+Jak - UI / General Programming / Audio
+
 Liam - Modelling / General Programming
 
 Kev - Modelling / General Programming
+
+Isabelle - Story Writing / Art
