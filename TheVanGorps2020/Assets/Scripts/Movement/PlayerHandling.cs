@@ -26,6 +26,7 @@ public class PlayerHandling : MonoBehaviour
     void Update()
     {
         newMove();
+ 
     }
 
     void newMove()
@@ -49,7 +50,13 @@ public class PlayerHandling : MonoBehaviour
             gravity = Mathf.Clamp(gravity, 1f, 15f);
         }
 
-        Vector3 gravityFall = Vector3.down * gravity * Time.deltaTime;
+        if (moveInput != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(moveInput), 0.2f);
+            
+        }
+
+            Vector3 gravityFall = Vector3.down * gravity * Time.deltaTime;
 
         charControls.Move(moveInput + gravityFall);
     }

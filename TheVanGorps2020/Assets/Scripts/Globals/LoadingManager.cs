@@ -11,9 +11,13 @@ public class LoadingManager : MonoBehaviour
     AsyncOperation operation;
     int Index;
 
+    public bool endload = false;
+
     private void LateUpdate()
     {
         if (Input.GetKeyDown("r")) { StartCoroutine(reload()); }
+
+        if (endload == true) { StartCoroutine(loadFinal()); }
     }
 
     private void OnTriggerEnter(Collider col)
@@ -42,7 +46,7 @@ public class LoadingManager : MonoBehaviour
             case "Level1": Index = 4; break;
             case "Level2": Index = 5; break;
             case "Level3": Index = 6; break;
-            case "level4": Index = 6; break; //REPEAT LEVEL FIX LATER
+            case "level4": Index = 7; break;
         }
 
         //manual wait before load
@@ -84,6 +88,34 @@ public class LoadingManager : MonoBehaviour
         StartCoroutine(loadscreen(loadingScreen));
 
         operation = SceneManager.LoadSceneAsync(currentSceneName);
+
+        //wait till operation finishes
+        while (!operation.isDone)
+        {
+            Debug.Log("LOADING");
+            yield return null;
+        }
+
+
+        //do stuff when operation finishes
+        if (operation.isDone)
+        {
+            Debug.Log(operation.progress);
+            Debug.Log("THE SCENE IS DEFINITELY LOADED");
+            loadingScreen.active = false;
+        }
+    }
+
+    IEnumerator loadFinal()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        if (currentSceneName == "Level4") { Index = 7; }
+
+        GameObject loadingScreen = GameObject.FindGameObjectWithTag("LoadScreen");
+
+        StartCoroutine(loadscreen(loadingScreen));
+
+        operation = SceneManager.LoadSceneAsync(Index);
 
         //wait till operation finishes
         while (!operation.isDone)
