@@ -72,12 +72,13 @@
     <Compile Include="Assets\Scripts\Mechanics\CogHolder1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\CogHolder2.cs" />
     <Compile Include="Assets\Scripts\Mechanics\CogHolder3.cs" />
-    <Compile Include="Assets\Scripts\Mechanics\DropItem.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\FinalLevelComplete.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Inventory.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Item.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\Level2Boundary.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Level3FinalBoundary.cs" />
     <Compile Include="Assets\Scripts\Mechanics\Level3ToggleBoundary.cs" />
-    <Compile Include="Assets\Scripts\Mechanics\Level4ToggleBoundary.cs" />
+    <Compile Include="Assets\Scripts\Mechanics\PlayerInventActions.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer1.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer2.cs" />
     <Compile Include="Assets\Scripts\Mechanics\PuzzleContainer3.cs" />

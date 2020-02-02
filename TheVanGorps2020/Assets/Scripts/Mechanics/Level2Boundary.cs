@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level4ToggleBoundary : MonoBehaviour
+public class Level2Boundary : MonoBehaviour
 {
     public GameObject puzzleObjNeeded;
     public GameObject Particlesys;

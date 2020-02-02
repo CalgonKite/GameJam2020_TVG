@@ -28,6 +28,8 @@ TagManager:
   - CogHolder2
   - CogHolder3
   - CamChild
+  - LoadScreen
+  - OutOfBounds
   layers:
   - Default
   - TransparentFX
