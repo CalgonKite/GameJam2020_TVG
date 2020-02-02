@@ -11,6 +11,11 @@ public class LoadingManager : MonoBehaviour
     AsyncOperation operation;
     int Index;
 
+    private void LateUpdate()
+    {
+        if (Input.GetKeyDown("r")) { StartCoroutine(reload()); }
+    }
+
     private void OnTriggerEnter(Collider col)
     {
         //if walk into next level object tag
@@ -68,5 +73,32 @@ public class LoadingManager : MonoBehaviour
     {
         loadingScreen.active = true;
         yield return new WaitForSecondsRealtime(2);
+    }
+
+    IEnumerator reload()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+
+        GameObject loadingScreen = GameObject.FindGameObjectWithTag("LoadScreen");
+
+        StartCoroutine(loadscreen(loadingScreen));
+
+        operation = SceneManager.LoadSceneAsync(currentSceneName);
+
+        //wait till operation finishes
+        while (!operation.isDone)
+        {
+            Debug.Log("LOADING");
+            yield return null;
+        }
+
+
+        //do stuff when operation finishes
+        if (operation.isDone)
+        {
+            Debug.Log(operation.progress);
+            Debug.Log("THE SCENE IS DEFINITELY LOADED");
+            loadingScreen.active = false;
+        }
     }
 }
