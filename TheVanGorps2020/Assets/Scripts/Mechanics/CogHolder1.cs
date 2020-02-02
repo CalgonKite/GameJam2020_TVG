@@ -11,6 +11,9 @@ public class CogHolder1 : MonoBehaviour
 
     public Inventory invent;
     public Inventory cogHoldInvent;
+    public MeshRenderer selfRenderer;
+    public Material emptyMaterial;
+    public Material fullMaterial;
     public bool cogplace = false;
     public bool cogtake = false;
     public bool correctcog = false;
@@ -83,6 +86,8 @@ public class CogHolder1 : MonoBehaviour
             cogHoldInvent.CurrentItem.Remove(cogHoldInvent.CurrentItem[0]);//
             Debug.Log("CogTaken");
             correctcog = false;
+            selfRenderer.material = emptyMaterial;
+
         }
     }
 
@@ -96,6 +101,8 @@ public class CogHolder1 : MonoBehaviour
             {
                 Debug.Log("Good job");
                 correctcog = true;
+                selfRenderer.material = fullMaterial;
+                
             }
         }
         else if (invent.CurrentItem.Count == 0) // If the player isn't carrying a cog //
