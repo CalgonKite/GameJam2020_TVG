@@ -13,7 +13,9 @@ public class FinalLevelComplete : MonoBehaviour
     public GameObject Particlesys2;
     public GameObject Particlesys3;
     public GameObject CogBrain;
-    public bool steam1, steam2, steam3, pushPuzzleSolved; 
+    public bool steam1, steam2, steam3, pushPuzzleSolved;
+
+    public GameObject load;
 
     private void LateUpdate()
     {
@@ -42,6 +44,8 @@ public class FinalLevelComplete : MonoBehaviour
         {
             //DO THINGS
             Debug.Log("START MAKING THE END GAME");
+            //LOAD LEVEL
+            load.GetComponent<LoadingManager>().endload = true;
         }
     }
 }
