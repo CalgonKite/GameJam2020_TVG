@@ -9,13 +9,13 @@ public class Level4ToggleBoundary : MonoBehaviour
     private void LateUpdate()
     {
         if (puzzleObjNeeded.GetComponent<CogHolder1>().correctcog == true)
-        {
+        { 
             gameObject.GetComponent<BoxCollider>().enabled = false;
             Particlesys.SetActive(false);
         }
         else
         {
-            gameObject.GetComponent<BoxCollider>().enabled = false;
+            gameObject.GetComponent<BoxCollider>().enabled = true;
             Particlesys.SetActive(true);
         }
     }
