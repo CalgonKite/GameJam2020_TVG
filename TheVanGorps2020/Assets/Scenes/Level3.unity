@@ -654,6 +654,9 @@ MonoBehaviour:
   Cog1: {fileID: 951230654571605416, guid: ec0c4e52acfb4a84eb2fadbe1b805107, type: 3}
   Cog2: {fileID: 7658642853973854440, guid: 69b4045309793894db9d45c1d5b3bbd5, type: 3}
   Cog3: {fileID: 6429089166050820398, guid: e4bdf2191aa9b1c4fa38a8ddaf9ae11e, type: 3}
+  c1Icon: {fileID: 0}
+  c2Icon: {fileID: 0}
+  c3Icon: {fileID: 0}
 --- !u!4 &863634740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1658076908987557317, guid: d691bc4506abcd14fb9482c1bded90c3,

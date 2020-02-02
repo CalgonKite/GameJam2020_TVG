@@ -8,11 +8,13 @@ public class Cog1 : MonoBehaviour
 
     public Inventory Invent;
     int PickupID = 0;
+    public GameObject returnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
         Invent = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>(); // Access to Inventory //
+        returnPoint = GameObject.Find("C1returnPoint");
     }
 
     private void OnTriggerStay(Collider col)
@@ -31,6 +33,15 @@ public class Cog1 : MonoBehaviour
                     Invent.DropItem();
                 }
             }
+        }
+    }
+
+    // DEBUG TO RETURN GAMEOBJECT //
+    private void LateUpdate()
+    {
+        if (Input.GetKeyDown("p"))
+        {
+            this.gameObject.transform.position = returnPoint.transform.position;
         }
     }
 
