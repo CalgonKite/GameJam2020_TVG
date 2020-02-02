@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractableBoundary : MonoBehaviour
 {
@@ -148,9 +149,10 @@ public class InteractableBoundary : MonoBehaviour
     /// <returns></returns>
     private IEnumerator OnTriggerStay(Collider other)
     {
-        bool keyPressed = Input.GetKeyDown(KeyCode.Space);
+        bool keyPressed = Input.GetKeyDown(KeyCode.L);
         if(keyPressed)
         {
+            Debug.Log("test");
             switch(name)
             {
                 case "boundPlay":
@@ -253,6 +255,7 @@ public class InteractableBoundary : MonoBehaviour
                     break;
 
                 case "boundLevel1":
+                    SceneManager.LoadScene(1);
                     Debug.Log("Start Level 1");
                     break;
 
