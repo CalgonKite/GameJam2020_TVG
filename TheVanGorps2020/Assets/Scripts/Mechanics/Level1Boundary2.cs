@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Level1Boundary2 : MonoBehaviour
 {
-    
-        public GameObject puzzleObjNeeded;
-        public GameObject Particlesys;
+    public GameObject puzzleObjNeeded;
+    public GameObject Particlesys;
         private void LateUpdate()
         {
             if (puzzleObjNeeded.GetComponent<CogHolder2>().correctcog2 == true)
@@ -20,6 +19,4 @@ public class Level1Boundary2 : MonoBehaviour
                 Particlesys.SetActive(true);
             }
         }
-  
-
 }
