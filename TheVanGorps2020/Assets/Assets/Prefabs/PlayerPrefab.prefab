@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 7980656137503357376}
   - component: {fileID: 7980656137503357377}
   - component: {fileID: 7980656137503357386}
+  - component: {fileID: 441479628}
   m_Layer: 0
   m_Name: PlayerPrefab
   m_TagString: Player
@@ -96,7 +97,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Size: {x: 1.25, y: 1.1, z: 1.25}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7980656137503357390
 MonoBehaviour:
@@ -179,6 +180,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerText: {fileID: 5676678173173240864}
   rounded_timer: 0
+--- !u!114 &441479628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980656137503357379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3edf1974a92279b47ab037eeac17a29b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invent: {fileID: 0}
 --- !u!1001 &2066171852456439712
 PrefabInstance:
   m_ObjectHideFlags: 0
