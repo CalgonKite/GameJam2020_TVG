@@ -11,7 +11,7 @@ public class Level3ToggleBoundary : MonoBehaviour
     public GameObject b3Particlesys;
     private void LateUpdate()
     {
-        if (puzzleObjNeeded.GetComponent<CogHolder3>().correctcog3 == true)
+        if (puzzleObjNeeded.GetComponent<CogHolder1>().correctcog == true)
         {
             boundary2.GetComponent<BoxCollider>().enabled = false;
             b2Particlesys.SetActive(false);
@@ -21,7 +21,7 @@ public class Level3ToggleBoundary : MonoBehaviour
         }
         else
         {
-            boundary2.GetComponent<BoxCollider>().enabled = false;
+            boundary2.GetComponent<BoxCollider>().enabled = true;
             b2Particlesys.SetActive(true);
 
             boundary3.GetComponent<BoxCollider>().enabled = false;
