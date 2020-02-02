@@ -49,9 +49,6 @@ public class Inventory : MonoBehaviour
         {
             Debug.Log(CurrentItem[0].iName);
         }
-        if (Input.GetKeyDown("g"))
-        {
-            DropItem();
-        }
+
     }
 }
