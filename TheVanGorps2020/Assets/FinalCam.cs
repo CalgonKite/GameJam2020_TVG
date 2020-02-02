@@ -43,6 +43,11 @@ public class FinalCam : MonoBehaviour
                 camRotateForward();
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     //moves to camera forward
