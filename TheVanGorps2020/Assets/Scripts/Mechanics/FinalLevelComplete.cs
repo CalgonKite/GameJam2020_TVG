@@ -8,11 +8,12 @@ public class FinalLevelComplete : MonoBehaviour
     public GameObject puzzleObjNeeded;
     public GameObject puzzleObjNeeded2;
     public GameObject puzzleObjNeeded3;
+    public GameObject puzzleObjNeeded4;
     public GameObject Particlesys;
     public GameObject Particlesys2;
     public GameObject Particlesys3;
     public GameObject CogBrain;
-    public bool steam1, steam2, steam3; 
+    public bool steam1, steam2, steam3, pushPuzzleSolved; 
 
     private void LateUpdate()
     {
@@ -31,10 +32,16 @@ public class FinalLevelComplete : MonoBehaviour
         else
         {   Particlesys3.SetActive(false);  steam3 = false; }
 
+        if (puzzleObjNeeded4.GetComponent<PuzzleContainer1>().puzzle1Solved == true)
+        { pushPuzzleSolved = true; }
+        else
+        { pushPuzzleSolved = false; }
 
-        if (steam1 == true && steam2 == true && steam3 == true)
+
+        if (steam1 == true && steam2 == true && steam3 == true && pushPuzzleSolved == true)
         {
-            Debug.Log("Used to cook in college ya know");
+            //DO THINGS
+            Debug.Log("START MAKING THE END GAME");
         }
     }
 }
