@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7887154698284692675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 8.89, y: 2.49, z: 3.78}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 650023f65b3b9b44d88bd9cda8f50dbb, type: 2}
+  - {fileID: 2100000, guid: f39ed5148c3352746bbee2b34a8cf65c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,6 +138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   invent: {fileID: 0}
   cogHoldInvent: {fileID: 0}
+  selfRenderer: {fileID: 7887154698284692696}
+  emptyMaterial: {fileID: 2100000, guid: f39ed5148c3352746bbee2b34a8cf65c, type: 2}
+  fullMaterial: {fileID: 2100000, guid: aa1a1e98105840f47832ab01ecaa3d57, type: 2}
   cogplace: 0
   cogtake: 0
   correctcog2: 0
@@ -159,3 +162,6 @@ MonoBehaviour:
   Cog1: {fileID: 951230654571605416, guid: ec0c4e52acfb4a84eb2fadbe1b805107, type: 3}
   Cog2: {fileID: 7658642853973854440, guid: 69b4045309793894db9d45c1d5b3bbd5, type: 3}
   Cog3: {fileID: 6429089166050820398, guid: e4bdf2191aa9b1c4fa38a8ddaf9ae11e, type: 3}
+  c1Icon: {fileID: 0}
+  c2Icon: {fileID: 0}
+  c3Icon: {fileID: 0}
