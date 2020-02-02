@@ -13,18 +13,22 @@ public class LoadingManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
+        //if walk into next level object tag
         if (col.tag == "Player")
         {
             StartCoroutine(loadAsync());
         }
     }
 
+    //LOADS
     IEnumerator loadAsync()
     {
+        //grabs loading screen and active scene name
         string currentSceneName = SceneManager.GetActiveScene().name;
 
         GameObject loadingScreen = GameObject.FindGameObjectWithTag("LoadScreen");
 
+        //assigns index based on scene name
         switch (currentSceneName)
         {
             case "Tutorial1": Index = 2; break;
@@ -36,17 +40,22 @@ public class LoadingManager : MonoBehaviour
             case "level4": Index = 6; break; //REPEAT LEVEL FIX LATER
         }
 
+        //manual wait before load
         StartCoroutine(loadscreen(loadingScreen));
+
+        //Load
         operation = SceneManager.LoadSceneAsync(Index);
 
-        loadingScreen.active = true;
+        //loadingScreen.active = true;
 
+        //wait till operation finishes
         while (!operation.isDone)
         {
             Debug.Log("LOADING");
             yield return null;
         }
 
+        //do stuff when operation finishes
         if (operation.isDone)
         {
             Debug.Log(operation.progress);
@@ -56,11 +65,8 @@ public class LoadingManager : MonoBehaviour
     }
 
     IEnumerator loadscreen (GameObject loadingScreen)
-    { 
-        yield return new WaitForSecondsRealtime(2);
-    }
-
-    void NextLevelSelect()
     {
+        loadingScreen.active = true;
+        yield return new WaitForSecondsRealtime(2);
     }
 }
