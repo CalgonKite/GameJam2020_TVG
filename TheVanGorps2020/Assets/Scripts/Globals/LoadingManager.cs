@@ -23,6 +23,8 @@ public class LoadingManager : MonoBehaviour
     {
         string currentSceneName = SceneManager.GetActiveScene().name;
 
+        GameObject loadingScreen = GameObject.FindGameObjectWithTag("LoadScreen");
+
         switch (currentSceneName)
         {
             case "Tutorial1": Index = 2; break;
@@ -31,11 +33,13 @@ public class LoadingManager : MonoBehaviour
             case "Level1": Index = 4; break;
             case "Level2": Index = 5; break;
             case "Level3": Index = 6; break;
+            case "level4": Index = 6; break; //REPEAT LEVEL FIX LATER
         }
 
+        StartCoroutine(loadscreen(loadingScreen));
         operation = SceneManager.LoadSceneAsync(Index);
 
-        //loadingScreen.active = true;
+        loadingScreen.active = true;
 
         while (!operation.isDone)
         {
@@ -47,8 +51,13 @@ public class LoadingManager : MonoBehaviour
         {
             Debug.Log(operation.progress);
             Debug.Log("THE SCENE IS DEFINITELY LOADED");
-            //loadingScreen.active = false;
+            loadingScreen.active = false;
         }
+    }
+
+    IEnumerator loadscreen (GameObject loadingScreen)
+    { 
+        yield return new WaitForSecondsRealtime(2);
     }
 
     void NextLevelSelect()

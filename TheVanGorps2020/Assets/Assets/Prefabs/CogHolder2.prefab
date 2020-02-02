@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7887154698284692678}
   - component: {fileID: 7887154698284692677}
   - component: {fileID: 7887154698284692676}
+  - component: {fileID: 451460720449752899}
   m_Layer: 0
   m_Name: CogHolder2
   m_TagString: CogHolder2
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e32b16b614cabf4bbef36dbca8c3a35, type: 2}
+  - {fileID: 2100000, guid: 650023f65b3b9b44d88bd9cda8f50dbb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -141,3 +142,20 @@ MonoBehaviour:
   cogtake: 0
   correctcog2: 0
   cogNum: 1
+--- !u!114 &451460720449752899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7887154698284692675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de45ea4c595653f4ea534918dc45b84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Items: []
+  CurrentItem: []
+  Cog1: {fileID: 951230654571605416, guid: ec0c4e52acfb4a84eb2fadbe1b805107, type: 3}
+  Cog2: {fileID: 7658642853973854440, guid: 69b4045309793894db9d45c1d5b3bbd5, type: 3}
+  Cog3: {fileID: 6429089166050820398, guid: e4bdf2191aa9b1c4fa38a8ddaf9ae11e, type: 3}
