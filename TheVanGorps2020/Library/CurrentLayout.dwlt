@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 516
     height: 1293
-  m_MinSize: {x: 279, y: 72}
-  m_MaxSize: {x: 4004, y: 4022}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -120,8 +120,8 @@ MonoBehaviour:
     y: 0
     width: 268
     height: 1021
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -336,20 +336,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Globals
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Globals
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\GJ2020\GameJam2020_TVG\TheVanGorps2020
+  m_LastProjectPath: D:\GGJ\GameJam2020_TVG\TheVanGorps2020
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 3}
-    m_SelectedIDs: 5c2d0000
-    m_LastClickedID: 11612
-    m_ExpandedIDs: 00000000722b00009c2e00002a2f0000442f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: a42f0000
+    m_LastClickedID: 12196
+    m_ExpandedIDs: 00000000aa2c0000623000007c30000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +377,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000722b00002a2f0000442f0000
+    m_ExpandedIDs: 00000000aa2c0000623000007c300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -497,9 +497,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 18faffff
-      m_LastClickedID: -1512
-      m_ExpandedIDs: 88fbffffa82f0000
+      m_SelectedIDs: 182d0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 9cd8fffff4dbffff8eebffffcaf5ffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -559,9 +559,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.7781234, y: -6.0010376, z: 9.617052}
+    m_Target: {x: -4.254095, y: 0.9363675, z: -9.669741}
     speed: 2
-    m_Value: {x: 4.7781234, y: -6.0010376, z: 9.617052}
+    m_Value: {x: -4.254095, y: 0.9363675, z: -9.669741}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,13 +590,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.39662343, y: -0.5543599, z: 0.339119, w: 0.64836305}
+    m_Target: {x: 0.10460378, y: -0.89496636, z: 0.2916245, w: 0.32101753}
     speed: 2
-    m_Value: {x: 0.39662313, y: -0.5543595, z: 0.33911875, w: 0.6483626}
+    m_Value: {x: 0.10460358, y: -0.89496464, z: 0.29162392, w: 0.3210169}
   m_Size:
-    m_Target: 21.58935
+    m_Target: 8.573695
     speed: 2
-    m_Value: 21.58935
+    m_Value: 8.573695
   m_Ortho:
     m_Target: 0
     speed: 2
