@@ -30,6 +30,8 @@ TagManager:
   - CamChild
   - LoadScreen
   - OutOfBounds
+  - playButtonLabelText
+  - exitButtonLabelText
   layers:
   - Default
   - TransparentFX
